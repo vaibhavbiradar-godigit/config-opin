@@ -1,0 +1,30 @@
+{
+    "projects": {
+        "opin": {
+            "id": "opin",
+            "orgId": "vaibhavbiradar-godigit",
+            "projectId": "config-opin",
+            "packageName": "@vaibhavbiradar-godigit/config-opin",
+            "name": "OPIN (ABS Classic)",
+            "isEditable": true,
+            "parentId": null,
+            "isDefault": true,
+            "defaultBranch": "main",
+            "style": "airwave",
+            "backend": "facade"
+        },
+        "digit": {
+            "id": "digit",
+            "orgId": "vaibhavbiradar-godigit",
+            "projectId": "config-digit",
+            "packageName": "@vaibhavbiradar-godigit/config-digit",
+            "name": "ABS (ABS Classic For ValueAttics)",
+            "isEditable": true,
+            "parentId": "opin",
+            "isDefault": false,
+            "defaultBranch": "main",
+            "style": "airwave",
+            "backend": "facade"
+        }
+    }
+}
