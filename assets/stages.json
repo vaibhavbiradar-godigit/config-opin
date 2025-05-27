@@ -1,0 +1,523 @@
+{
+  "prod": {
+    "produces": {
+      "urn:allianz:airwave:initlocationsearchevent": {
+        "eventType": "initlocationsearchevent",
+        "namespace": "allianz",
+        "boundedContext": "airwave",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "policyId": "string",
+          "groupId": "string"
+        }
+      },
+      "urn:allianz:com.documentmanagement:documentlistevent": {
+        "eventType": "documentlistevent",
+        "namespace": "allianz",
+        "boundedContext": "com.documentmanagement",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "contract": "string"
+        }
+      },
+      "urn:allianz:claimsatm.incidentoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.incidentoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "claimNumber": "string"
+        }
+      },
+      "urn:allianz:claimsatm.incident:createclaimmfeevent": {
+        "eventType": "createclaimmfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.incident",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "policyNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.incident:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.incident",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "claimNumber": "string",
+          "natCat": "string",
+          "mode": "string",
+          "pageId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.confirmationoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.confirmationoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.confirmationoverview:reloadevent": {
+        "eventType": "reloadevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.confirmationoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.confirmation:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.confirmation",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.activitylog:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.activitylog",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "claimNumber": "string",
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.damagesoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claimsatm.damagesoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "claimNumber": "string",
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.owndamages:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.owndamages",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "claimNumber": "string",
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "damageId": "string",
+          "action": "string"
+        }
+      },
+      "urn:allianz:claimsatm.thirdpartydamagesoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claimsatm.thirdpartydamagesoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "claimNumber": "string",
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.thirdpartydamages:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.thirdpartydamages",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "claimNumber": "string",
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "action": "string",
+          "pageId": "string",
+          "selectId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.involvedpartiesoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claimsatm.involvedpartiesoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.involvedparties:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.involvedparties",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.solutionofferingoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.solutionofferingoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "editMode": "string"
+        }
+      },
+      "urn:allianz:claimsatm.solutionoffering:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.solutionoffering",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "solutionOfferingId": "string",
+          "correlationId": "string",
+          "operation": "string",
+          "incidentNumber": "string"
+        }
+      },
+      "urn:allianz:claimsatm.serviceoffering:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.serviceoffering",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "serviceId": "string",
+          "periodId": "string",
+          "operation": "string"
+        }
+      },
+      "urn:allianz:claimsatm.circumstancesoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claimsatm.circumstancesoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.circumstances:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claimsatm.circumstances",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "mode": "string",
+          "pageId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.coverageoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.coverageoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.coverage:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.coverage",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "operation": "string"
+        }
+      },
+      "urn:allianz:claimsatm.coverage:reloadevent": {
+        "eventType": "reloadevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.coverage",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.injuries:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.injuries",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "action": "string",
+          "pageId": "string",
+          "claimNumber": "string",
+          "selectId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.injuriesoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.injuriesoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "claimNumber": "string"
+        }
+      },
+      "urn:allianz:claimsatm.litigationmanager:removelitigationevent": {
+        "eventType": "removelitigationevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.litigationmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "litigationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.litigationmanager:removejurisdictionevent": {
+        "eventType": "removejurisdictionevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.litigationmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "jurisdictionId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.litigationmanager:litigationmanagerevent": {
+        "eventType": "litigationmanagerevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.litigationmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "claimNumber": "string",
+          "pageName": "string",
+          "correlationId": "string",
+          "editMode": "string",
+          "userId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.litigationmanager:editmodeevent": {
+        "eventType": "editmodeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.litigationmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "editMode": "string"
+        }
+      },
+      "urn:allianz:claimsatm.litigationmanager:editlitigationevent": {
+        "eventType": "editlitigationevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.litigationmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "litigationId": "string",
+          "incidentNumber": "string",
+          "claimNumber": "string",
+          "selectedStepFromUser": "string",
+          "userId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.litigationmanager:editjurisdictionevent": {
+        "eventType": "editjurisdictionevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.litigationmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "jurisdictionId": "string",
+          "incidentNumber": "string",
+          "claimNumber": "string",
+          "selectedStepFromUser": "string",
+          "userId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.litigationmanager:addlitigationevent": {
+        "eventType": "addlitigationevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.litigationmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "incidentNumber": "string",
+          "claimNumber": "string",
+          "userId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.litigationmanager:addjurisdictionevent": {
+        "eventType": "addjurisdictionevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.litigationmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "litigationId": "string",
+          "correlationId": "string",
+          "incidentNumber": "string",
+          "claimNumber": "string",
+          "userId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.fraudmanager:removeevent": {
+        "eventType": "removeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.fraudmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "investigationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.fraudmanager:fraudmanagerevent": {
+        "eventType": "fraudmanagerevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.fraudmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "claimNumber": "string",
+          "pageName": "string",
+          "correlationId": "string",
+          "editMode": "string",
+          "userId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.fraudmanager:editmodeevent": {
+        "eventType": "editmodeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.fraudmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "editMode": "string"
+        }
+      },
+      "urn:allianz:claimsatm.fraudmanager:editevent": {
+        "eventType": "editevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.fraudmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "investigationId": "string",
+          "incidentNumber": "string",
+          "claimNumber": "string",
+          "selectedStepFromUser": "string",
+          "userId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.fraudmanager:addevent": {
+        "eventType": "addevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.fraudmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "incidentNumber": "string",
+          "claimNumber": "string",
+          "userId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.damagesoverview:reloadevent": {
+        "eventType": "reloadevent",
+        "namespace": "allianz",
+        "boundedContext": "claimsatm.damagesoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.claimnet:claimnetnatcatevent": {
+        "eventType": "claimnetnatcatevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.claimnetnatcat",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "userId": "string",
+          "editMode": "string"
+        }
+      },
+      "urn:allianz:claimsatm.claimnet:editmodeevent": {
+        "eventType": "editmodeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.claimnetnatcat",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "editMode": "string"
+        }
+      },
+      "urn:allianz:claimsatm.solutionofferingoverview:reloadevent": {
+        "eventType": "reloadevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.solutionofferingoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "lossAdjustorFlowFlag": "string"
+        }
+      },
+      "urn:allianz:claimsatm.serviceofferingoverview:reloadevent": {
+        "eventType": "reloadevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.serviceofferingoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string"
+        }
+      },
+      "urn:allianz:claimsatm.serviceofferingoverview:initiatemfeevent": {
+        "eventType": "initiatemfeevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.serviceofferingoverview",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "incidentNumber": "string",
+          "correlationId": "string",
+          "editMode": "string"
+        }
+      },
+      "urn:allianz:claimsatm.fraudmanager:editsavingdetailsevent": {
+        "eventType": "editsavingdetailsevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.fraudmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "investigationId": "string",
+          "incidentNumber": "string",
+          "claimNumber": "string"
+        }
+      },
+      "urn:allianz:claimsatm.fraudmanager:addpotentialindicatorevent": {
+        "eventType": "addpotentialindicatorevent",
+        "namespace": "allianz",
+        "boundedContext": "claims.fraudmanager",
+        "mfeId": "airwavemfe",
+        "requestDataMapping": {
+          "correlationId": "string",
+          "incidentNumber": "string",
+          "claimNumber": "string"
+        }
+      }
+    }
+  }
+}
